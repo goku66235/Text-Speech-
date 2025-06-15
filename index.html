@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+<audio id="loveAudio" src="love.mp3"></audio>
+
+    <div class="hero">
+
+        <h1>Text To Speech <span>Converter</span> & <span>Vice-Versa !!!</span></h1>
+
+        <textarea id="textInput" placeholder="Write anything here..."></textarea>
+
+        <div class="row">
+            <label for="voiceSelect" class="visually-hidden">Voice</label>
+            <select id="voiceSelect" name="voice"></select>
+
+            <button id="speakBtn">
+                <img id="hu" src="image/play.svg" alt="icon" />
+                Listen
+            </button>
+            <button id="micBtn">
+                <img src="image/mic.svg" alt="mic">Speak
+            </button>
+        </div>
+    </div>
+    <div class="corner-img">
+        <img src="heart.png" alt="Corner Image" />
+    </div>
+    <img src="heart.png" alt="Lovely Heart" class="lovely-heart">
+
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>
